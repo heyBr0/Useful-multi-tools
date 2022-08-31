@@ -1,0 +1,27 @@
+.container {
+  text-align: center;
+  margin: 0 auto;
+  background-color: lightcoral;
+
+  form {
+    display: grid;
+    margin: 0 auto;
+    width: 50%;
+    background-color: rgb(235, 229, 150);
+    padding: 1rem 0;
+  }
+
+  form > * {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  label {
+    background-color: rgb(94, 196, 191);
+  }
+
+  button {
+    background-color: lightgreen;
+    margin: 1rem 0;
+  }
+}
