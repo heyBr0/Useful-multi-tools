@@ -1,31 +1,38 @@
-.container {
+.exchange {
   text-align: center;
-  background-color: #dddbf1;
+  background-color: #f5d5ed;
   margin: 2.5vh auto;
   height: 80vh;
   border-radius: 55px;
   width: 70%;
   outline: 5px solid #ffc107;
 
-  form {
+  section {
+    display: grid;
     margin: 0 auto;
     width: 50%;
-    
-    .currencyColumn {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-content: space-around;
-    }
+    padding: 1rem 0;
   }
 
-  form > * {
-    padding: 1rem;
-    margin: 1rem;
+  .currencyColumn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
   }
 
-  label {
-    font-size: 2rem;
-    width: 15rem;
+  .currencyColumn2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+  }
+
+  h2,
+  h3 {
+    margin: 1rem 0;
+  }
+
+  #h3Converter{
+    padding-top: 1rem;
   }
 
   select,
@@ -34,6 +41,11 @@
     width: 15rem;
     background-color: black;
     color: white;
+  }
+
+  label {
+    font-size: 2rem;
+    width: 15rem;
   }
 
   .button-85 {

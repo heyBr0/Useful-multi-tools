@@ -1,0 +1,50 @@
+.todo {
+  text-align: center;
+  background-color: #b4436c;
+  margin: 2.5vh auto;
+  height: 80vh;
+  border-radius: 55px;
+  width: 70%;
+  outline: 5px solid #ffc107;
+}
+
+.todo-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+#infoP {
+  font-size: 1.5rem;
+  margin: 1rem auto;
+}
+
+#displayToDo {
+  height: 65vh;
+  border: 1px solid #ffc107;
+  border-radius: 25px;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 1rem;
+}
+
+#completeToDo {
+  background-color: rgba(144, 238, 144, 0.671);
+  font-size: 1rem;
+  border-radius: 15px;
+  padding: 0.2rem;
+}
+#removeToDo { 
+  background-color: red;
+  font-size: 1rem;
+  border-radius: 15px;
+  padding: 0.2rem;
+}
+
+.inputToDo {
+  font-size: 2rem;
+  width: 30rem;
+  background-color: black;
+  color: white;
+}

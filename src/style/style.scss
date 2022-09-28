@@ -1,35 +1,29 @@
 @import "navbar";
 @import "crypto";
+@import "calculator";
+@import "math";
+@import "exchange";
+@import "stopwatch";
+@import "todo";
+@import "notes";
 
- body {
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  font-size: 1.6rem;
   text-align: center;
-  margin: 0 auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Fira Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  background-color: #333;
 }
-/*
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-#container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#editor,
-#preview {
-  width: 400px;
-  height: 200px;
-  border: 1px solid black;
-  margin: 1rem auto;
-  background-color: white;
-}
- */

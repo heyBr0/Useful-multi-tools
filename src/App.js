@@ -1,10 +1,13 @@
-import Crypto from "./Crypto";
-import Navbar from "./Navbar";
+import Crypto from "./components/Crypto";
+import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Exchange from "./Exchange";
-import Calculator from "./Calculator";
-import Math from "./Math";
-import Notes from "./Notes";
+import Exchange from "./components/Exchange";
+import Calculator from "./components/Calculator";
+import Math from "./components/Math";
+import Notes from "./components/Notes";
+import LandingPage from "./components/LandingPage";
+import Stopwatch from "./components/Stopwatch";
+import ToDo from "./components/ToDo";
 
 function App() {
   return (
@@ -14,13 +17,15 @@ function App() {
           <Navbar />
           <div className="content">
             <Routes>
-              <Route exact path="/crypto" element={<Crypto />} />
-              <Route exact path="/exchange" element={<Exchange />} />
-              <Route exact path="/calculator" element={<Calculator />} />
-              <Route exact path="/math" element={<Math />} />
-              <Route exact path="/notes" element={<Notes />} />
-
-              {/*     <Route path="*" element={<NotFound />} /> */}
+              <Route path="/crypto" element={<Crypto />} />
+              <Route path="/exchange" element={<Exchange />} />
+              <Route path="/calculator" element={<Calculator />} />
+              <Route path="/math" element={<Math />} />
+              <Route path="/stopwatch" element={<Stopwatch />} />
+              <Route path="/todo" element={<ToDo />} />
+              <Route path="/notes" element={<Notes />} />
+              <Route index element={<LandingPage />} />
+              <Route path="*" element={<LandingPage />} />
             </Routes>
           </div>
         </div>
