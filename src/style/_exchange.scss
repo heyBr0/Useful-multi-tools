@@ -126,8 +126,9 @@
   }
   .exchange {
     width: 100%;
+    height: auto;
 
-    section{
+    section {
       width: 100%;
       height: auto;
     }
@@ -142,9 +143,11 @@
       justify-content: baseline;
       align-items: baseline;
     }
-  }
 
- 
+    .footerResult {
+      padding-bottom: 1rem;
+    }
+  }
 
   h1 {
     font-size: 1.8rem;

@@ -466,6 +466,7 @@ label {
   }
   .exchange {
     width: 100%;
+    height: auto;
   }
   .exchange section {
     width: 100%;
@@ -479,6 +480,9 @@ label {
   .exchange .currencyColumn2 {
     justify-content: baseline;
     align-items: baseline;
+  }
+  .exchange .footerResult {
+    padding-bottom: 1rem;
   }
   h1 {
     font-size: 1.8rem;
@@ -632,6 +636,8 @@ h3 {
   #displayToDo {
     min-height: 5rem;
     height: auto;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
   }
   .inputToDo {
     font-size: 1.6rem;
@@ -721,6 +727,6 @@ footer span {
     width: 100%;
   }
   #intro {
-    margin: 3rem auto;
+    margin: 1rem auto;
   }
 }/*# sourceMappingURL=style.css.map */

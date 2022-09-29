@@ -175,7 +175,7 @@ function Exchange() {
         Convert
       </button>
       <section>
-        <div className="currencyColumn">
+        <div className="currencyColumn footerResult">
           <label>Result:</label>
           <input
             type="number"
