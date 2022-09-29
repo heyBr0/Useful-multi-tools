@@ -6,6 +6,7 @@
   border-radius: 55px;
   width: 70%;
   outline: 5px solid #ffc107;
+  word-wrap: normal;
 }
 
 .todo-list {
@@ -56,10 +57,12 @@
   .todo {
     width: 100%;
     height: auto;
+    word-wrap: normal;
   }
   .todo-list {
     display: grid;
     grid-template-columns: 1fr;
+    word-wrap: normal;
   }
   #displayToDo {
     min-height: 5rem;
