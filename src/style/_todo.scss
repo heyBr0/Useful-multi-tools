@@ -35,7 +35,7 @@
   border-radius: 15px;
   padding: 0.2rem;
 }
-#removeToDo { 
+#removeToDo {
   background-color: red;
   font-size: 1rem;
   border-radius: 15px;
@@ -47,4 +47,26 @@
   width: 30rem;
   background-color: black;
   color: white;
+}
+
+@media (max-width: 985px) {
+  .todo {
+    width: 100%;
+    height: auto;
+  }
+  .todo-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #displayToDo {
+    min-height: 5rem;
+    height: auto;
+  }
+  .inputToDo {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+  #infoP {
+    font-size: 1rem;
+  }
 }

@@ -6,7 +6,7 @@ const ToDoItem = ({ todo, index, completeTodo, removeTodo }) => {
     >
       {todo.text}
       <div>
-        <button id="completeToDo" onClick={() => completeTodo(index)}>Complete</button>
+        <button id="completeToDo" onClick={() => completeTodo(index)}>&#10003;</button>
         <button id="removeToDo" onClick={() => removeTodo(index)}>X</button>
       </div>
     </div>

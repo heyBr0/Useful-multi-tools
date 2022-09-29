@@ -31,7 +31,7 @@
     margin: 1rem 0;
   }
 
-  #h3Converter{
+  #h3Converter {
     padding-top: 1rem;
   }
 
@@ -46,6 +46,7 @@
   label {
     font-size: 2rem;
     width: 15rem;
+    padding: 0 0.5rem;
   }
 
   .button-85 {
@@ -115,5 +116,41 @@
     left: 0;
     top: 0;
     border-radius: 10px;
+  }
+}
+
+@media (max-width: 985px) {
+  label {
+    font-size: 1.5rem;
+    width: 7rem;
+  }
+  .exchange {
+    width: 100%;
+
+    section{
+      width: 100%;
+      height: auto;
+    }
+
+    select,
+    input {
+      font-size: 1.5rem;
+      width: 8rem;
+    }
+
+    .currencyColumn2 {
+      justify-content: baseline;
+      align-items: baseline;
+    }
+  }
+
+ 
+
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2,
+  h3 {
+    font-size: 1.5rem;
   }
 }

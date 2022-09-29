@@ -19,3 +19,23 @@ a {
 a:hover {
   color: teal;
 }
+
+@media (max-width: 985px){
+ 
+  .navbar{
+    width: 100%;
+    height: auto;
+
+  }
+
+  .links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  a{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 1rem;
+  }
+}

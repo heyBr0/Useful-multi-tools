@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ToDoItem from "./ToDoItem";
 
 const ToDo = () => {
-  const [task, setTask] = useState("");
-  const [toDoList, setToDo] = useState([
+ /*  const initialState = localStorage.getItem("toDoList") || []  [
     {
       text: "Read a book",
       isCompleted: false,
@@ -16,7 +15,23 @@ const ToDo = () => {
       text: "Learn Type Script",
       isCompleted: false,
     },
-  ]);
+  ];  */
+  const initialState = JSON.parse(localStorage.getItem('toDoList'));
+  useEffect(() => {
+   
+    if (initialState) {
+      setToDo(initialState);
+    }
+  }, []);
+
+  const [task, setTask] = useState("");
+  const [toDoList, setToDo] = useState([]);
+
+ 
+
+  useEffect(() => {
+    localStorage.setItem("toDoList", JSON.stringify(toDoList))
+  }, [toDoList])
 
   const addTodo = (text) => {
     const newList = [...toDoList, { text }];
@@ -41,6 +56,8 @@ const ToDo = () => {
     addTodo(task);
     setTask("");
   };
+
+
 
   return (
     <div className="todo">

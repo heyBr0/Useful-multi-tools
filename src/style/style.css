@@ -21,6 +21,21 @@ a:hover {
   color: teal;
 }
 
+@media (max-width: 985px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  a {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 1rem;
+  }
+}
 .container {
   text-align: center;
   background-color: #dddbf1;
@@ -123,6 +138,24 @@ a:hover {
   border-radius: 10px;
 }
 
+@media (max-width: 985px) {
+  label {
+    font-size: 1.5rem;
+    width: 7rem;
+  }
+  .container {
+    width: 100%;
+    height: auto;
+  }
+  .container select,
+.container input {
+    font-size: 1.5rem;
+    width: 8rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+}
 .app {
   border-radius: 55px;
   background-color: rgba(0, 128, 128, 0.5);
@@ -145,7 +178,6 @@ a:hover {
 .display {
   display: grid;
   grid-template-columns: 1fr;
-  /*  background-color: rgb(210, 210, 231); */
   background-color: black;
   color: white;
   padding: 2rem;
@@ -187,6 +219,16 @@ a:hover {
   background-color: rgb(190, 121, 121);
 }
 
+@media (max-width: 985px) {
+  .app {
+    width: 100%;
+    height: auto;
+    padding-bottom: 4rem;
+  }
+  .calculator {
+    width: 100%;
+  }
+}
 .math {
   text-align: center;
   background-color: #8fcb9b;
@@ -293,6 +335,28 @@ label {
   border-radius: 10px;
 }
 
+@media (max-width: 985px) {
+  label {
+    font-size: 1.5rem;
+    width: 7rem;
+  }
+  .math {
+    width: 100%;
+    height: auto;
+  }
+  #percentage-form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #percentageOf-form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #difference-form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 .exchange {
   text-align: center;
   background-color: #f5d5ed;
@@ -335,6 +399,7 @@ label {
 .exchange label {
   font-size: 2rem;
   width: 15rem;
+  padding: 0 0.5rem;
 }
 .exchange .button-85 {
   font-size: 1rem;
@@ -394,6 +459,35 @@ label {
   border-radius: 10px;
 }
 
+@media (max-width: 985px) {
+  label {
+    font-size: 1.5rem;
+    width: 7rem;
+  }
+  .exchange {
+    width: 100%;
+  }
+  .exchange section {
+    width: 100%;
+    height: auto;
+  }
+  .exchange select,
+.exchange input {
+    font-size: 1.5rem;
+    width: 8rem;
+  }
+  .exchange .currencyColumn2 {
+    justify-content: baseline;
+    align-items: baseline;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2,
+h3 {
+    font-size: 1.5rem;
+  }
+}
 .stopwatch {
   text-align: center;
   background-color: #ab87ff;
@@ -468,6 +562,12 @@ label {
   border-radius: 10px;
 }
 
+@media (max-width: 985px) {
+  .stopwatch {
+    width: 100%;
+    height: auto;
+  }
+}
 .todo {
   text-align: center;
   background-color: #b4436c;
@@ -520,16 +620,27 @@ label {
   color: white;
 }
 
-.notes {
-  text-align: center;
-  background-color: #bea8aa;
-  margin: 2.5vh auto;
-  height: 80vh;
-  border-radius: 55px;
-  width: 70%;
-  outline: 5px solid #ffc107;
+@media (max-width: 985px) {
+  .todo {
+    width: 100%;
+    height: auto;
+  }
+  .todo-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #displayToDo {
+    min-height: 5rem;
+    height: auto;
+  }
+  .inputToDo {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+  #infoP {
+    font-size: 1rem;
+  }
 }
-
 *,
 *:before,
 *:after {
@@ -547,4 +658,69 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #333;
+}
+
+/* #landingPage{
+  height: 85vh;
+} */
+#intro {
+  margin: 10rem auto;
+  background-color: white;
+}
+
+#introH2 {
+  margin-top: 5rem;
+  color: white;
+  background-color: #333;
+}
+
+#introP {
+  margin: 1rem auto;
+  color: black;
+  width: 50%;
+  background-color: white;
+  padding: 1rem;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+footer div {
+  width: 15%;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+footer span {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 985px) {
+  body {
+    width: 100%;
+  }
+  #introP {
+    width: 100%;
+  }
+  #intro {
+    margin: 3rem auto;
+  }
 }/*# sourceMappingURL=style.css.map */

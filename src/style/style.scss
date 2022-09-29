@@ -5,9 +5,8 @@
 @import "exchange";
 @import "stopwatch";
 @import "todo";
-@import "notes";
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
 
 *,
 *:before,
@@ -22,8 +21,73 @@
 body {
   font-size: 1.6rem;
   text-align: center;
-  font-family: 'Fira Mono', monospace;
+  font-family: "Fira Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #333;
+}
+
+/* #landingPage{
+  height: 85vh;
+} */
+
+#intro {
+  margin: 10rem auto;
+  background-color: white;
+}
+
+#introH2 {
+  margin-top: 5rem;
+  color: white;
+  background-color: #333;
+}
+
+#introP {
+  margin: 1rem auto;
+  color: black;
+  width: 50%;
+  background-color: white;
+  padding: 1rem;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+footer a {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+footer div {
+  width: 15%;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+footer span {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 985px) {
+  body {
+    width: 100%;
+  }
+  #introP {
+    width: 100%;
+  }
+
+  #intro {
+    margin: 3rem auto;
+  }
 }

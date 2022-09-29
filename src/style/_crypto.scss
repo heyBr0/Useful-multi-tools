@@ -105,3 +105,30 @@
     border-radius: 10px;
   }
 }
+
+
+@media (max-width: 985px){
+
+  label {
+   font-size: 1.5rem;
+    width: 7rem;
+  }
+  .container{
+    width: 100%;
+    height: auto;
+
+    select,
+    input {
+      font-size: 1.5rem;
+      width: 8rem;    
+    }
+  }
+
+ 
+  h1{
+    font-size: 1.8rem;
+  }
+
+
+
+}
