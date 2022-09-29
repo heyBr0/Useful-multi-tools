@@ -580,14 +580,14 @@ h3 {
   border-radius: 55px;
   width: 70%;
   outline: 5px solid #ffc107;
-  word-wrap: normal;
+  word-wrap: break-word;
 }
 
 .todo-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  word-wrap: normal;
+  word-wrap: break-word;
 }
 
 #infoP {
@@ -603,7 +603,7 @@ h3 {
   overflow-x: hidden;
   overflow-y: auto;
   margin: 0 1rem;
-  word-wrap: normal;
+  word-wrap: break-word;
 }
 
 #completeToDo {
@@ -625,31 +625,31 @@ h3 {
   width: 30rem;
   background-color: black;
   color: white;
-  word-wrap: normal;
+  word-wrap: break-word;
 }
 
 @media (max-width: 985px) {
   .todo {
     width: 100%;
     height: auto;
-    word-wrap: normal;
+    word-wrap: break-word;
   }
   .todo-list {
     display: grid;
     grid-template-columns: 1fr;
-    word-wrap: normal;
+    word-wrap: break-word;
   }
   #displayToDo {
     min-height: 5rem;
     height: auto;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    word-wrap: normal;
+    word-wrap: break-word;
   }
   .inputToDo {
     font-size: 1.6rem;
     width: 100%;
-    word-wrap: normal;
+    word-wrap: break-word;
   }
   #infoP {
     font-size: 1rem;
