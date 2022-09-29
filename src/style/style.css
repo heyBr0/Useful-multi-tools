@@ -586,6 +586,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
+  word-wrap: normal;
 }
 
 #infoP {
@@ -601,6 +602,7 @@ h3 {
   overflow-x: hidden;
   overflow-y: auto;
   margin: 0 1rem;
+  word-wrap: normal;
 }
 
 #completeToDo {
@@ -622,6 +624,7 @@ h3 {
   width: 30rem;
   background-color: black;
   color: white;
+  word-wrap: normal;
 }
 
 @media (max-width: 985px) {
@@ -638,10 +641,12 @@ h3 {
     height: auto;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
+    word-wrap: normal;
   }
   .inputToDo {
     font-size: 1.6rem;
     width: 100%;
+    word-wrap: normal;
   }
   #infoP {
     font-size: 1rem;
@@ -727,6 +732,6 @@ footer span {
     width: 100%;
   }
   #intro {
-    margin: 1rem auto;
+    margin: 3rem auto;
   }
 }/*# sourceMappingURL=style.css.map */

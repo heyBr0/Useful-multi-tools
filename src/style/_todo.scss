@@ -12,6 +12,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
+  word-wrap: normal;
 }
 
 #infoP {
@@ -27,6 +28,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   margin: 0 1rem;
+  word-wrap: normal;
 }
 
 #completeToDo {
@@ -47,6 +49,7 @@
   width: 30rem;
   background-color: black;
   color: white;
+  word-wrap: normal;
 }
 
 @media (max-width: 985px) {
@@ -63,10 +66,12 @@
     height: auto;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
+    word-wrap: normal;
   }
   .inputToDo {
     font-size: 1.6rem;
     width: 100%;
+    word-wrap: normal;
   }
   #infoP {
     font-size: 1rem;
