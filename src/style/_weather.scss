@@ -7,3 +7,24 @@
   outline: 5px solid #ffc107;
   color: white;
 }
+
+@media (max-width: 985px) {
+  #weather {
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
+  }
+  input {
+    font-size: 1.7rem;
+    width: 15rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+}

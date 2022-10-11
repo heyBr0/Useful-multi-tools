@@ -9,7 +9,6 @@ function Navbar() {
       <div className="links">
         <Link to="/crypto">Crypto</Link>
         <Link to="/exchange">Exchange</Link>
-  {/*       <Link to="/calculator">Calculator</Link> */}
         <Link to="/weather">Weather</Link>
         <Link to="/math">Math</Link>
         <Link to="/stopwatch">Stopwatch</Link>

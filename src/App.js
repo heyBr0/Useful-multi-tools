@@ -18,13 +18,11 @@ function App() {
           <div className="content">
             <Routes>
               <Route path="/crypto" element={<Crypto />} />
-              <Route path="/exchange" element={<Exchange />} />
-         {/*      <Route path="/calculator" element={<Calculator />} /> */}
+              <Route path="/exchange" element={<Exchange />} />      
               <Route path="/math" element={<Math />} />
               <Route path="/stopwatch" element={<Stopwatch />} />
               <Route path="/todo" element={<ToDo />} />
-              <Route path="/weather" element={<Weather />} />
-              
+              <Route path="/weather" element={<Weather />} />              
               <Route index element={<LandingPage />} />
               <Route path="*" element={<LandingPage />} />
             </Routes>
