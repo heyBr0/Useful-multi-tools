@@ -1,10 +1,16 @@
 # Multi-tool-organizer
 
-### 1. Crypto currency API and exchange rates API with latest data
-### 2. Calculator
-### 3. Math operations with percentages
-### 4. ToDo list with local storage saving
-### 5. Stopwatch with resume/reset function
+### 1. Crypto currency API
+
+### 2. Exchange rates API with latest data
+
+### 3. Weather forecast
+
+### 4. Math operations with percentages
+
+### 5. Stopwatch with pause/resume function
+
+### 6. ToDo list with local storage saving
 
 https://multi-tool-organizer.vercel.app/
 
