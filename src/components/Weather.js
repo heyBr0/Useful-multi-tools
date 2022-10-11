@@ -22,7 +22,7 @@ const Weather = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `http://api.weatherapi.com/v1/current.json?key=${KEY}&q=${city}&aqi=no`
+        `https://api.weatherapi.com/v1/current.json?key=${KEY}&q=${city}&aqi=no`
       );
       setTemperature(response.data.current.temp_c + "°C");
       setCondition(response.data.current.condition.text);
@@ -35,7 +35,7 @@ const Weather = () => {
   const moreForecast = async () => {
     try {
       const responseF = await axios.get(
-        `http://api.weatherapi.com/v1/forecast.json?key=${KEY}&q=${city}&days=5&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=${KEY}&q=${city}&days=5&aqi=no&alerts=no`
       );
 
       setDay2(responseF.data.forecast.forecastday[1].date);
