@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Weather = () => {
   const [city, setCity] = useState("");
-  const KEY = "106b036bdefb4d70af2113344221110";
+  const KEY = "9723a86fc1bc44fdb2e105146220612";
   const [temperature, setTemperature] = useState("");
   const [condition, setCondition] = useState("");
   const [humidity, setHumidity] = useState("");
